@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/styles";
+import MobilRightMenuSlider from "@material-ui/core/Drawer"
 import {
     AppBar,
     Toolbar,
@@ -29,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     menuSliderContainer: {
         width: 250,
         background: "#511",
-        height: "30rem"
+        height: "100%"
     },
     avatar: {
         display: "block",
@@ -45,11 +47,13 @@ const useStyles = makeStyles(theme => ({
 const menuItems = [
     {
         listIcon: <Home />,
-        listText: "Home"
+        listText: "Home",
+        listPath: "/"
     },
     {
         listIcon: <AssignmentInd />,
-        listText: "Resume"
+        listText: "Resume",
+        listPath: "/resume"
     },
     {
         listIcon: <Apps />,
@@ -70,12 +74,13 @@ const Navbar = () => {
     }
     const classes = useStyles()
     const sideList = slider => (
-        <Box className={classes.menuSliderContainer} component="nav">
+        <Box className={classes.menuSliderContainer} component="div">
+            onClick={toggleSlider(slider, false)}
             <Avatar className={classes.avatar} src={avatar} alt="Gil Solis" />
             <Divider />
             <List>
                 {menuItems.map((lsItem, key) => (
-                    <ListItem button key={key}>
+                    <ListItem button key={key} component={Link} to={lsItem.listPath}>
                         <ListItemIcon className={classes.listItem}>
                             {lsItem.listIcon}
                         </ListItemIcon>
@@ -83,7 +88,6 @@ const Navbar = () => {
                     </ListItem>
                 ))}
             </List>
-
         </Box>
 
     )
@@ -93,12 +97,17 @@ const Navbar = () => {
             <Box component="nav">
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar>
-                        <IconButton>
-                            <ArrowBack style={{ color: "tomato" }}></ArrowBack>
+                        <IconButton onClick={toggleSlider("right", true)} >
+                            <ArrowBack style={{ color: "tomato" }} />
                         </IconButton>
                         <Typography variant="h5" >
                             Portfolio
                     </Typography>
+                        <MobilRightMenuSlider anchor='right'
+                            open={state.right} onClose={toggleSlider("right", false)}>
+                            {sideList("right")}
+
+                        </MobilRightMenuSlider>
                     </Toolbar>
                 </AppBar>
             </Box>
