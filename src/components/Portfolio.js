@@ -12,9 +12,10 @@ import {
     Button,
     Typography
 } from "@material-ui/core";
-import project1 from "../images/html-css-javascript-lg.jpg"
-import project2 from "../images/javascript-fullstack.jpg"
-import project3 from "../images/mern-stack.jpg"
+import project1 from "../images/championsleague.jpg"
+import project2 from "../images/covidnstuff.jpg"
+import project3 from "../images/password.jpg"
+import project4 from "../images/burger.JPG"
 
 
 
@@ -136,7 +137,7 @@ const Portfolio = () => {
                                 component='img'
                                 alt="Project 1"
                                 height="140"
-                                image={project3}
+                                image={project4}
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
