@@ -12,6 +12,7 @@ import {
     Button,
     Typography
 } from "@material-ui/core";
+import GitHubIcon from '@material-ui/icons/GitHub';
 import project1 from "../images/championsleague.jpg"
 import project2 from "../images/covidnstuff.jpg"
 import project3 from "../images/password.jpg"
@@ -26,7 +27,7 @@ const useStyles = makeStyles({
     },
     cardContainer: {
         maxWidth: 345,
-        margin: "3rem",
+        // margin: "3rem",
         margin: "5rem auto"
     }
 })
@@ -51,20 +52,25 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 1
+                                    Project 1 - Champions League Tracker
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget neque nec ex varius venenatis. Phasellus molestie volutpat orci, non viverra tellus malesuada et. Duis consectetur elit sit amet arcu tempor, in bibendum odio laoreet. Vivamus interdum rutrum nisi eu egestas. Phasellus eget diam vitae nisl auctor gravida. Donec nec est mauris. Sed libero massa, aliquet et semper sed, dapibus sed magna. Curabitur id laoreet sem.
+                                    Enables users to get the most current game data and videos from the Champions League. Users need to select two teams from the dropdown and press "Go" to view game date or schedule information. Additionally, videos of games played will be available.
                                     </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                                Share
-                                    </Button>
+                                <a href="https://github.com/GilSolis/ChampionsLeague">
+                                    <GitHubIcon />
+                                </a>
+
+                            </Button>
                             <Button size="small" color="primary">
-                                Live Demo
-                                    </Button>
+                                <a href="https://alexshanless.github.io/Champ-Leag-Tracker">
+                                    Live Demo
+                                </a>
+                            </Button>
                         </CardActions>
 
                     </Card>
@@ -81,20 +87,24 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 2
+                                    Project 2 - Covid n Stuff
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget neque nec ex varius venenatis. Phasellus molestie volutpat orci, non viverra tellus malesuada et. Duis consectetur elit sit amet arcu tempor, in bibendum odio laoreet. Vivamus interdum rutrum nisi eu egestas. Phasellus eget diam vitae nisl auctor gravida. Donec nec est mauris. Sed libero massa, aliquet et semper sed, dapibus sed magna. Curabitur id laoreet sem.
+                                    Enables users to get up to date statistics surrounding Covid-19 in regards to number of cases and deaths broken down by location. Additionally, local users can view a dynamically updated data set of businesses along with their operational details. User can also read thoughts and prayers left by others or add a prayer of there oww in a Thoughts and Prayers social component.
                                     </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                                Share
-                                    </Button>
+                                <a href="https://github.com/GilSolis/corona-virus-tracker">
+                                    <GitHubIcon />
+                                </a>
+                            </Button>
                             <Button size="small" color="primary">
-                                Live Demo
-                                    </Button>
+                                <a href="https://covidnstuff.herokuapp.com/">
+                                    Live Demo
+                                </a>
+                            </Button>
                         </CardActions>
 
                     </Card>
@@ -111,17 +121,19 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 3
+                                    Password Generator
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget neque nec ex varius venenatis. Phasellus molestie volutpat orci, non viverra tellus malesuada et. Duis consectetur elit sit amet arcu tempor, in bibendum odio laoreet. Vivamus interdum rutrum nisi eu egestas. Phasellus eget diam vitae nisl auctor gravida. Donec nec est mauris. Sed libero massa, aliquet et semper sed, dapibus sed magna. Curabitur id laoreet sem.
+                                    A password generator that works off user input to determine the length of password and which characters to include.
                                     </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
                             <Button size="small" color="primary">
-                                Share
-                                    </Button>
+                                <a href="https://github.com/GilSolis/ChampionsLeague">
+                                    <GitHubIcon />
+                                </a>
+                            </Button>
                             <Button size="small" color="primary">
                                 Live Demo
                                     </Button>
@@ -141,17 +153,19 @@ const Portfolio = () => {
                             />
                             <CardContent>
                                 <Typography gutterBottom variant="h5">
-                                    Project 4
+                                    Burger Mania!
                                     </Typography>
                                 <Typography variant="body2" color="textSecondary" component="p">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget neque nec ex varius venenatis. Phasellus molestie volutpat orci, non viverra tellus malesuada et. Duis consectetur elit sit amet arcu tempor, in bibendum odio laoreet. Vivamus interdum rutrum nisi eu egestas. Phasellus eget diam vitae nisl auctor gravida. Donec nec est mauris. Sed libero massa, aliquet et semper sed, dapibus sed magna. Curabitur id laoreet sem.
+                                    Burger Mania! is a restaurant app that lets users input the names of burgers they'd like to eat and devour them.
                                     </Typography>
                             </CardContent>
                         </CardActionArea>
                         <CardActions>
-                            <Button size="small" color="primary">
-                                Share
-                                    </Button>
+                            <Button size="small" color="primary" src="">
+                                <a href="https://github.com/GilSolis/ChampionsLeague">
+                                    <GitHubIcon />
+                                </a>
+                            </Button>
                             <Button size="small" color="primary">
                                 Live Demo
                                     </Button>
