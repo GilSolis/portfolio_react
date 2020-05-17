@@ -39,7 +39,7 @@ export const Header = () => {
     return (
         <Box className={classes.typedContainer}>
             <Grid container justify="center">
-                <Avatar className={classes.avatar} src={avatar} alt="Gil Solis" />
+                {/* <Avatar className={classes.avatar} src={avatar} alt="Gil Solis" /> */}
             </Grid>
             <Typography className={classes.title} variant="h4">
                 <Typed strings={["Gil Solis"]} typeSpeed={70} />
