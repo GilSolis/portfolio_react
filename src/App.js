@@ -6,12 +6,15 @@ import './App.css';
 import Resume from "./components/Resume"
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import NavBar from './components/Navbar';
 
 function App() {
+  console.log(process.env.PUBLIC_URL)
   return (
     <>
       <CssBaseline />
-      <Route exact path={process.env.BASE_URL} component={Home} />
+      <NavBar />
+      <Route exact path={process.env.PUBLIC_URL} component={Home} />
       <Route path="/resume" component={Resume} />
       <Route path="/portfolio" component={Portfolio} />
       <Route path="/contact" component={Contact} />

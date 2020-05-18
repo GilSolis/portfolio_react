@@ -15,7 +15,6 @@ const Resume = () => {
     const classes = useStyles();
     return (
         <>
-            <Navbar />
             <Box component='header'>
                 <Typography variant='h4' align='center' style={{ marginTop: "5%" }}>
                     <a href={Pdf} target="_blank" className={classes.style}>Click Me!</a>

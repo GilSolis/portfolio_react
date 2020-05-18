@@ -42,7 +42,6 @@ const Home = () => {
                     }
                 }}
             />
-            <Navbar />
             <Header />
         </div>
     )

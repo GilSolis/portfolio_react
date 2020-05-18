@@ -44,7 +44,6 @@ const Contacts = () => {
     const classes = useStyles();
     return (
         <Box component="div" style={{ background: "#233", height: "100vh" }}>
-            <Navbar />
             <Grid container justify="center">
                 <Box component="form" className={classes.form}>
                     <Typography
