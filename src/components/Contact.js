@@ -54,7 +54,7 @@ const Contacts = () => {
                             textTransform: "uppercase",
                         }}
                     >
-                        Say Hi!
+                        Email me! GilbertSolis_@hotmail.com
           </Typography>
                     <InputField
                         fullWidth={true}
